@@ -1,18 +1,22 @@
-BASE_YIELD = {
-    "wheat": 3.0,
-    "rice": 4.0
-}
-
-PRICE = {
+crop_prices = {
     "wheat": 22000,
-    "rice": 18000
+    "rice": 20000
 }
 
 
-def estimate_yield(crop: str, ndvi: float) -> float:
-    historical_ndvi = 0.55
-    return round(BASE_YIELD[crop] * (ndvi / historical_ndvi), 2)
+def estimate_yield(crop, ndvi):
+
+    base = 2.5
+
+    est = base + (ndvi * 2)
+
+    return round(est, 2)
 
 
-def estimate_revenue(crop: str, yield_tons: float) -> int:
-    return int(yield_tons * PRICE[crop])
+def estimate_revenue(crop, est_yield):
+
+    price = crop_prices.get(crop, 20000)
+
+    revenue = est_yield * price
+
+    return revenue

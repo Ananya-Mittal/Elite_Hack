@@ -1,12 +1,12 @@
-SAFE_LOAN_PERCENT = 0.6
+def loan_decision(revenue, score):
 
+    loan_limit = revenue * (score / 100) * 0.8
 
-def loan_decision(revenue: int, crop_health: str, weather: str):
-    loan_limit = int(revenue * SAFE_LOAN_PERCENT)
-
-    if crop_health == "Good" and weather == "Normal":
+    if score >= 75:
         decision = "Approve"
+    elif score >= 50:
+        decision = "Manual Review"
     else:
-        decision = "High Risk"
+        decision = "Reject"
 
-    return loan_limit, decision
+    return round(loan_limit, 2), decision

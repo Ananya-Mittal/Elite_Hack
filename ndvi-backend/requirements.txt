@@ -2,8 +2,17 @@
 
 fastapi
 uvicorn
-earthengine-api
 requests
+earthengine-api
+pydantic
+sqlalchemy
+passlib[bcrypt]
+python-jose
+scikit-learn
+pandas
+numpy
+joblib
 
-python -m uvicorn main:app --reload #used to run backend on browser
+python -m uvicorn app:app --reload #used to run backend on browser
 
+python -m uvicorn app:app --host 0.0.0.0 --port 5000 --reload
