@@ -1,0 +1,9 @@
+=> update with ur project id on google earth engine 
+
+fastapi
+uvicorn
+earthengine-api
+requests
+
+python -m uvicorn main:app --reload #used to run backend on browser
+
