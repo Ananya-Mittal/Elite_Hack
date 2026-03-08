@@ -1,0 +1,18 @@
+=> update with ur project id on google earth engine 
+
+fastapi
+uvicorn
+requests
+earthengine-api
+pydantic
+sqlalchemy
+passlib[bcrypt]
+python-jose
+scikit-learn
+pandas
+numpy
+joblib
+
+python -m uvicorn app:app --reload #used to run backend on browser
+
+python -m uvicorn app:app --host 0.0.0.0 --port 5000 --reload
