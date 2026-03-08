@@ -1,0 +1,71 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Varchas</string>
+
+    <!-- Header Texts -->
+    <string name="app_title">🌾 Agri Credit Scoring</string>
+    <string name="app_subtitle">Smart Loan Assessment for Farmers</string>
+
+    <!-- Section Titles -->
+    <string name="farm_location">Farm Location</string>
+    <string name="financial_summary">Financial Summary</string>
+    <string name="farm_health_analysis">Farm Health Analysis</string>
+    <string name="score_factors">Score Factors</string>
+
+    <!-- Input Labels -->
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="select_crop_type">Select Crop Type</string>
+
+    <!-- Crop Types -->
+    <string name="wheat">🌾 Wheat</string>
+    <string name="rice">🌾 Rice</string>
+
+    <!-- Button Text -->
+    <string name="calculate_button">Calculate Credit Score</string>
+
+    <!-- Result Labels -->
+    <string name="credit_score">Credit Score</string>
+    <string name="score_denominator">/100</string>
+    <string name="loan_limit">Loan Limit:</string>
+    <string name="est_revenue">Est. Revenue:</string>
+    <string name="est_yield">Est. Yield:</string>
+    <string name="crop_health">Crop Health:</string>
+    <string name="weather">Weather:</string>
+    <string name="soil_status">Soil Status:</string>
+    <string name="ndvi_label">NDVI:</string>
+
+    <!-- Decision Texts -->
+    <string name="approved">✅ Approved</string>
+    <string name="high_risk">⚠️ High Risk</string>
+
+    <!-- Status Messages -->
+    <string name="loading">Loading…</string>
+    <string name="calculating">Calculating credit score…</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_fields">Please enter latitude and longitude</string>
+    <string name="error_invalid_format">Invalid coordinates format</string>
+    <string name="error_out_of_range">Coordinates out of valid range\nLatitude: -90 to 90\nLongitude: -180 to 180</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    <string name="error_parsing">Error processing response</string>
+    <string name="error_timeout">Request timed out. Please try again.</string>
+
+    <!-- Success Messages -->
+    <string name="success_calculation">Credit score calculated successfully</string>
+
+    <!-- Info Messages -->
+    <string name="info_default_coords">Using default coordinates (Delhi region)</string>
+
+    <!-- Health Status Values -->
+    <string name="health_good">Good</string>
+    <string name="health_moderate">Moderate</string>
+    <string name="health_poor">Poor</string>
+    <string name="weather_normal">Normal</string>
+    <string name="weather_drought">Drought Risk</string>
+    <string name="weather_flood">Flood Risk</string>
+    <string name="soil_healthy">Healthy Soil</string>
+    <string name="soil_dry">Dry Soil</string>
+    <string name="soil_unavailable">Soil Data Unavailable</string>
+</resources>
